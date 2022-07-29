@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+var tkt;
+window.alert("ticket cost is 150/-");
+tkt=parseInt(window.prompt("entre how many tickets you want to book"));
+tkt_price=150;
+ttl_price=0;
+ttl_price=tkt*tkt_price;
+if(tkt<=2)
+{  
+   document.write("you have booked "+tkt+"<br>");
+   document.write("total price is "+ttl_price);
+}
+else if(tkt>=6 && tkt<=0)
+{
+ window.alert("booking is not possible");
+}
+else if(tkt>2 && tkt<=5)
+{
+   document.write("you have booked "+tkt+"<br>");
+   ttl_price-=0.05*ttl_price;
+  document.write("total price is "+ttl_price);
+}
+</script>
+<body bgcolor=pink></body>
+</head>
+</html>
