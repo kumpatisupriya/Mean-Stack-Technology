@@ -1,0 +1,17 @@
+<html>
+<body>
+<h2>Javascript CallBack</h2>
+<h1 id="demo"></h1>
+<script>
+function supriyadisplay(value){
+ document.getElementById("demo").innerHTML=value;
+}
+function kusuma(n1,n2,myCallback){
+ let n3=n1+n2;
+  myCallback(n3);
+}
+kusuma(5,6,supriyadisplay);
+//supriyadisplay(n4);
+</script>
+</body>
+</html>
