@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+function givenInfo(some){
+alert(some+" Inform to Subscribers");
+}
+let promise=new Promise(function(resolve,reject)
+{
+song_status=window.prompt("Enter song ready or not");
+if(song_status=="ready"){
+resolve("song ready");
+}
+else
+{
+reject("Song not Ready");
+}
+});
+promise.then(
+function(value){givenInfo(value);},function(error){givenInfo(error);}
+);
+</script>
+</body>
+</html>
