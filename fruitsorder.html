@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>Fruits Order Form</h1>
+<p>Enter the quantity of each fruit:</p>
+No.of Apples: <input id="apples"><br><br>
+No.of Bananas: <input id="bananas"><br><br>
+No.of Oranges: <input id="oranges"><br><br>
+<button onclick="totalcost()">Total Cost</button> <input readonly id="cost">
+<script>
+totalcost=function(){
+  var a=Number(document.getElementById("apples").value);
+  var b=Number(document.getElementById("bananas").value);
+  var o=Number(document.getElementById("oranges").value);
+  const ap=10;const ba=5;const or=8;
+  var price;
+  price=a*ap+b*ba+o*or;
+  document.getElementById("cost").value=price;
+
+}
+</script>
+</body>
+</html>

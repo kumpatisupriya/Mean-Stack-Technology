@@ -1,0 +1,24 @@
+<html>
+<body>
+ <input id="movie"> Enter no.of tickets<br><br>
+  <button onclick="getPrice()">Get Total</button> <input readonly id="total">
+ <script>
+  getPrice=function(){
+   var n=Number(document.getElementById("movie").value);
+   const ticket_price=150;
+   var total_price;
+   if(n>2&&n<=6){
+    total_price=n*ticket_price-(n*ticket_price*0.05);
+    document.getElementById("total").value=total_price.toFixed(2);
+    }
+    else if(n<2&&n>0){
+     total_price=n*ticket_price;
+          document.getElementById("total").value=total_price.toFixed(2);
+   }
+   else{
+   alert("Booking is not possible");
+ }
+}
+</script>
+</body>
+</html>
